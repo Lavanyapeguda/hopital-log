@@ -13,7 +13,7 @@
     <title>SIGN UP</title>
   </head>
   <body>
-      <h2 class="text-center text-white bg-success">Patient Signup</h2>
+      <h2 class="text-center text-white bg-success">SIGNUP</h2>
       <form method="post" action="/Psignup/">
         {% csrf_token %}
         <div class="form-group">
@@ -40,13 +40,6 @@
             <label for="pass2">Confirm Password</label>
             <input type="password" class="form-control" id="pass2" name="pass2" placeholder="Confirm Your Password" Required>
         </div>
-        <nav>Address:</nav>
-        <input type="text" class="form-control" id="line" name="line" placeholder="ENter address" Required>
-        <input type="text" class="form-control" id="city" name="city" placeholder="Enter city name" Required>
-        <input type="text" class="form-control" id="state" name="state" placeholder="Enter state name" Required>
-        <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter pincode" Required>
-        <br>
-        <br>
         <button type="submit" class="btn btn-primary">Sign Up</button>
     </form>
          

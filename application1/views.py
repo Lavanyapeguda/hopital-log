@@ -20,11 +20,7 @@ def signup(request):
         email = request.POST['email']
         pass1 = request.POST['pass1']
         pass2 = request.POST['pass2']
-        line= request.POST['line']
-        city= request.POST['city']
-        state= request.POST['state']
-        picode= request.POST['pincode']
-        
+
         myuser = User.objects.create_user(username, email, pass1)
         myuser.first_name = fname
         myuser.last_name = lname
@@ -66,10 +62,6 @@ def Psignup(request):
         email = request.POST['email']
         pass1 = request.POST['pass1']
         pass2 = request.POST['pass2']
-        line= request.POST['line']
-        city= request.POST['city']
-        state= request.POST['state']
-        picode= request.POST['pincode']
 
         myuser = User.objects.create_user(username, email, pass1)
         myuser.first_name = fname
